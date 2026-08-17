@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "CyclingRoutes"
+version = "0.0.1"
+requires-python = ">=3.10"
+dependencies = [
+    "gxpy>=9.0",
+    "pandas>=2.0",
+    "numpy>=1.26",
+]
+
+[project.scripts]
+my-command = "my_project.cli:main"
+
+[project.optional-dependencies]
+dev = ["ruff", "black", "pre-commit"]
+
+[tool.hatch.envs.default]
+features = ["dev"]
+
+[tool.hatch.envs.default.scripts]
+lint   = "ruff check --fix ."
+format = "black ."
+check  = ["lint", "format"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.black]
+line-length = 88
