@@ -15,7 +15,7 @@ dependencies = [
 [project.scripts]
 my-command = "my_project.cli:main"
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = ["ruff", "black", "pre-commit"]
 
 [tool.hatch.envs.default]
