@@ -6,7 +6,8 @@ print("Welcome to the gpx Cycling Route Summary")
 print("This program will summarize cycling data in gpx format and give you a summary of your trips")
 homeLat = input("Input home latitude: ")
 homeLon = input("Input home longitude: ")
-inputFolder = input("Please input the folder with you gpx data: ")
+
+inputFolder = input("Please input the folder or file with your data: ")
 outputFolder = "output"
 if not os.path.exists(outputFolder):
     os.mkdirs(outputFolder)
@@ -14,7 +15,7 @@ if not os.path.exists(outputFolder):
 
 # Choice Menu
 print("What would you like to do?")
-print("1.) ")
+print("1.) Filter by Route Destination and add to output folder")
 
 # Error checking for user choice 
 while True:
@@ -30,4 +31,5 @@ while True:
 # Activate the user choice
 match menuInput:
     case 1:
-        routeFilter(inputFolder, homeLat, homeLon)
+        routeFilter(inputFolder, outputFolder, homeLat, homeLo:with expression as target:
+            passn)
