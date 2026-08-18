@@ -7,9 +7,9 @@ name = "CyclingRoutes"
 version = "0.0.1"
 requires-python = ">=3.10"
 dependencies = [
-    "gxpy>=9.0",
+    "gpxpy>=1.6",
     "pandas>=2.0",
-    "numpy>=1.26",
+    "numpy>=2.0",
 ]
 
 [project.scripts]
